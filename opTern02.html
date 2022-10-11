@@ -10,9 +10,13 @@
     */
 
     //Entrada
-
-
+    const distanciaPercorrida = Number(prompt("Informe a distância total percorrida pelo entregador para realizar a entrega"));
+    const cemKM  = (distanciaPercorrida/100*15);
+    const acimaCem = (distanciaPercorrida/100*25);
     //Processamento
+    (distanciaPercorrida< 50)? alert(`Com essa distância o preço total será de ${distanciaPercorrida*1} reais `)
+    :(distanciaPercorrida<100)? alert(`Com essa distancia o preço total será de ${distanciaPercorrida + cemKM} reais`)
+    : alert(`Com essa distância o preço total será de ${distanciaPercorrida + acimaCem} reais`)
 
 
     //Saída

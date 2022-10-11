@@ -11,9 +11,14 @@
     */
 
     //Entrada
+    const custoTotal = Number(prompt("Informe o custo total da viagem que deseja realizar"));
 
 
     //Processamento
+    (custoTotal<500)? alert(`O valor de cada parcela será de R$  ${custoTotal/1} `)
+    :(custoTotal<1000)? alert(`O valor de cada parcela será de ${custoTotal/2}`)
+    :(custoTotal<1500)? alert(`O valor de cada parcela será de R$ ${custoTotal/4}`)
+    : alert(` O valor de cada parcela será de R$ ${custoTotal/10}`);
 
 
     //Saída
